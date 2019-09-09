@@ -1,0 +1,137 @@
+    
+	To solve the complex Promise problem u need to use async await
+	The main differnce between async await and promise is that async await will hault the async function.
+	In async function u can pass the parameter while u cannot do the same in Promise
+	await return the resolved value of a promise.
+	await can also be used with the function
+	
+	THIS SHOWS THE COMPLEX PROMISE PROBLEM THAT COULD BE SOLVED WITH ASYNC AWAIT 
+	
+	
+	console.log("person1:shows ticket");
+    console.log("person2:shows ticket");
+  
+    const Promisewifebringsticks=new Promise((resolve,reject)=>
+        {
+            setTimeout(()=>{
+              resolve("ticket")},2000)            
+        }
+        );
+        
+    const getPopcorn = Promisewifebringsticks.then((t)=>{
+      console.log("wife:I have Tickets");
+      console.log("husband:We should go inside");
+      console.log("wife:No I am feeling Hungry");
+      
+      return new Promise((resolve,reject)=>{
+        resolve(`${t} popcorn`);  
+        })
+    })
+    
+    const getButter=getPopcorn.then((t)=>{
+     console.log("Husband:I got some Popcorn");
+     console.log("Husband:We should go in");
+     console.log("Wife:Put some cheese on Popcorn")
+    
+      return new Promise((resolve,reject)=>{
+          resolve(`${t} butter`);
+      })        
+    })
+    getButter.then((t)=>console.log(`shows ${t}`));
+	
+	
+USING IT WITH ASYNC/AWAIT
+	
+const Premovie=async()=> {
+const Promisewifebringsticks=new Promise((resolve,reject)=>{
+setTimeout(()=>
+{
+resolve("ticket")}
+,0);
+}
+);
+const getPopcorn = new Promise((resolve,reject)=>resolve(`popcorn`));
+const getButter= new Promise((resolve,reject)=>resolve(`butter`));
+
+let ticket = await Promisewifebringsticks;
+console.log("wife:I have Tickets");
+console.log("husband:We should go inside");
+console.log("wife:No I am feeling Hungry");
+
+let pic = await getPopcorn;
+console.log("Husband:I got some Popcorn");
+console.log("Husband:We should go in");
+console.log("Wife:Put some cheese on Popcorn");
+
+let but = await getButter;
+console.log(`Husband:I have got some ${but} on Popcorn`);
+console.log("Husband:Anything else wife");
+console.log("Wife:Lets go we are getting late");
+console.log("Husband:Thanks for the reminder");
+
+return ticket ;
+};
+
+Premovie().then((m)=>{console.log(`person3:shows ${m}`)});
+
+
+ASYNC AWAIT
+
+
+function withConstructor(num){
+
+return new Promise((resolve, reject) => {
+   if (num === 0)
+    {
+      resolve('zero');
+	} 
+	else 
+	{
+      resolve('not zero');
+    }
+	})
+}
+
+withConstructor(0).then((resolveValue) => {
+  console.log(` withConstructor(0) returned a promise which resolved to: ${resolveValue}.`);
+})
+
+async function withAsync(num){
+
+  if (num === 0){
+
+      return 'zero';
+
+    } else {
+
+      return 'not zero';
+
+    }
+    }
+​
+withAsync(100).then((resolvedValue) =>
+	{
+	console.log(resolvedValue);	
+	}
+	)
+	
+	
+USING ASYNC AWAIT in which await is conditioned on a function
+
+function nativePromiseDinner() {
+  brainstormDinner().then((meal) => {
+	  console.log(`I'm going to make ${meal} for dinner.`);
+  })
+}
+
+
+// async/await version:
+async function announceDinner() {
+  // Write your code below:
+let r=await nativePromiseDinner() ;
+  console.log(r);
+}
+
+announceDinner();	
+	
+	
