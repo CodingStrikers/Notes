@@ -1,0 +1,67 @@
+One thing u need to understand in promises is
+const myPromise=new Promise(
+	(resolve,reject)=>  // here resolve and reject are the paramters of the callback function
+	{
+	resolve("Matter Resolved");
+	  reject("It cant be resolved");
+	}
+	)
+	or this
+	
+	
+const myPromise=new Promise(
+	(resolve,reject)=>
+	{
+        {
+            resolve("Matter Resolved");
+        }
+        {	  
+            reject("It cant be resolved");
+	    }
+	}
+	)
+	
+	console.log(myPromise);
+	
+	Both are valid.
+when u call a promise dont use () after it 
+.then is predefined method of promise
+.then can also have a call back function.
+
+
+Eg to understand promises
+
+
+console.log("person1:shows ticket");
+console.log("person2:shows ticket");
+const TicketPromise=new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    resolve('tickets')
+},3000);
+})
+TicketPromise.then((ta)=>{
+console.log(`person3: shows ${ta}`)    
+})
+console.log("person4:shows ticket");
+console.log("person5:shows ticket");
+
+const myPromise=new Promise((resolve,reject)=>
+    {
+    const a=10;
+        if(a>20)
+            {
+            resolve("Yay"); 
+            }      
+        else{
+            reject("No");
+            }
+})
+
+myPromise.then((resolvedValue)=>{console.log(resolvedValue)}).catch((rejectValue)=>{console.log(rejectValue)});
+
+In this the myPromise function(may be called something else) will reject and will return automaticallu "No" this value will then be passed to resolvedValue parameter of then method.
+ 
+ 
+We can also use Promise.all instead of using no of then operators.
+ 
+ 
