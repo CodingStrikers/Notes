@@ -1,0 +1,17 @@
+
+LOCAL STORAGE-
+Local Storage is the place where all your data gets saved.
+
+GET METHOD-
+to get the value of local storage -
+localStorage.getItem('name of the variable whose value u wanna have');
+
+SET METHOD-
+to set the value of local storage -
+localStorage.setItem('name of the variable',the value u want to set);
+Also u can set the value inside that method only ,even if u have declared the variable globally if u are getting the value of a variable in certain method. 
+
+Auth guard ts file is the place from where redirection must happen.
+
+One must create a auth service file in order to match the desired conditions.
+
