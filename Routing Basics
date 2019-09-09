@@ -1,0 +1,28 @@
+Activated Route is used for dynamic purpose.(applied in ts file)
+Routing is also applied in ts file.
+Router Link is used for static purpose.(applied in HTML file)
+
+Router.navigate is similar to RouterLink.
+EG To differntiate the two-
+
+EG for RouterLink
+<a [routerLink]="['/payment']">payment</a>
+
+EG for Router.navigate
+
+private r:Router
+ this.r.navigate(['home']);
+
+Either u use routerLink or router.navigate everytime we need to mention the path and component in Routing file otherwise it will wont work.
+
+PARAMETERISED ROUITNG
+Non-parameterised routes take precedence over parameterised routes.
+
+ACTIVATED ROUTE 
+In this params.subscribe method is used to get the valaue of parmaters.
+Activated route is mainly used to get the information from the URL.
+Suppose their is an Email ID and password and when it matches User wants to display the records in dashboard tehn in that case we must use this to get the name from the url (BY GET METHOD )and then search it in the DB and then send it to the angular.
+
+Firstly we need to set the router.navigate to dashboard/:name from where we will use the Get method and activated router is used to get the paramater.
+
+
