@@ -1,0 +1,6 @@
+.ts file code
+import * as CryptoJS from 'crypto-js'; 
+npm i crypto-js
+
+Password':CryptoJS.MD5(this.myForm.get('_Password').value),
+Password will store the data in encrypted format in the form of data.
