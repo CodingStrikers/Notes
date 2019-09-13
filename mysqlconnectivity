@@ -1,0 +1,26 @@
+var mysql = require('mysql');
+
+npm i mysql;
+
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '1234',
+  database: 'record'
+});
+
+connection.connect(function (err) {
+  if (err) throw err;
+  console.log("Connected!");
+})
+
+
+var sql = "INSERT INTO rec VALUES ('"+firstname+"','"+lastname+"','"+age+"','"+gender+"','"+email+"','"+e+"','"+mobile+"')";
+    connection.query(sql, function (err, result) {
+      if (err) {
+        console.log(err);
+      }
+      else{
+      The logic u want to have it could be either using SMTP Protocol or any other thing.
+      
+      }
