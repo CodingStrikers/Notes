@@ -1,0 +1,28 @@
+
+var nodemailer = require('nodemailer');
+
+// Sending the mail to the entered email address:-
+
+// setting UP
+var transporter = nodemailer.createTransport({
+          service: 'gmail',
+          auth: {
+            user: 'vishnumehtajjbytes@gmail.com',
+            pass: '18011997Vishnu'
+          }
+        });
+// Email Details
+        var mailOptions = {
+          from: 'vishnumehtajjbytes@gmail.com',
+          to: `${email}`,
+          subject: `Congratulations ${firstname}`,
+          text: 'Thank You For connecting with us Hope to connect with you in Future! Have a great day Ahead'
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log(`Email sent to ${email}`);
+          }
+        });
