@@ -1,6 +1,8 @@
 var crypto=require('crypto'),algorithm = 'aes-256-ctr',passwordd='1234';
 
-**ENCRYPTING**
+npm i crypto
+
+ENCRYPTING
   function encrypt(text){
       var cipher = crypto.createCipher(algorithm,passwordd)
       var crypted = cipher.update(text,'utf8','hex')
@@ -11,7 +13,7 @@ var crypto=require('crypto'),algorithm = 'aes-256-ctr',passwordd='1234';
     var e=encrypt(password);
     console.log(e);
 
-
+DECRYPTING
 function decrypt(text){
   var decipher = crypto.createDecipher(algorithm,passwordd)
   var dec = decipher.update(text,'hex','utf8')
@@ -19,5 +21,5 @@ function decrypt(text){
   return dec;
  
 } 
-   var d = decrypt(result[0].password);
+   var d = decrypt(e);
    console.log(d);  
