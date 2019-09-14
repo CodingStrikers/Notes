@@ -1,0 +1,60 @@
+It is case Sensitive.
+
+var a;
+a + 2;  // Evaluates to NaN as the value of a is not defined.
+
+parse Int method
+parseInt('101', 2)  means (101) base 2
+Output will be 5
+By default it converts to decimal
+
+converting binary to decimal
+10110101 = (1 × 2⁷) + (0 × 2⁶) + (1 × 2⁵) + (1 × 2⁴) + (0 × 2³) + (1 × 2²) + (0 × 2¹) + (1 × 2⁰) = 181
+
+SEVEN DATATYPES
+A) Boolean 
+B) Null
+C) Undefined
+D) Number
+E) BigInt
+F) String
+G) Symbol
+
+console.log('37'-7);//30
+This wil display an output of 30 bcoz the string will act as an int although string and evaluate to subtract,ion of 2 nos
+
+console.log('97'+7);//977
+this will display an output of 977 as it will concatiante the two things
+Similar as console.log('vis'+8); //vis8
+
+SOME MORE CONSOLE.LOG EXAMPLES-
+var c='vishnu';console.log(parseInt(c));
+VM1306:1 NaN
+undefined
+console.log('8'+null);
+VM1324:1 8null
+undefined
+console.log('8'-null);
+
+CONVERTING STRING TO INTEGER-
+parseInt method is used to convert a string to an integer.
+FOR Eg parseInt('101',2);
+2nd parameter is used to specify the no system in which u want it to be converted.
+''2.1' + '1.2' // '2.11.2'
+(+'2.1') + (+'1.2') // 3.3
+Here in 2nd one the + operator is used to convert the integer into a string.
+
+Literals are nothing but the collection of an objects or array elements.
+
+UNDERSTANDING THE ASPECT OF INDEX VALUE AND KEY VALUE:-
+ var a=['q','w','e','r'];
+ console.log(a[1]); //output will be w
+
+var car = { manyCars: {a: 'Saab', b: 'Jeep'}, 7: 'Mazda' };
+console.log(car[0]);
+here 0 will not be an index no,it will be considered as the key value of the object.So always ensure that to mention the index no in case of array and key in case of object in the square bracket.\
+
+var quote = "He read \"The Cremation of Sam McGee\" by R.W. Service.";
+console.log(quote);
+
+
