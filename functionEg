@@ -1,26 +1,18 @@
-var x=document.getElementById('a').innerHTML;
-
-var r=["Praful","Vishnu","Roop"];
+var x = document.getElementById('a').innerHTML;
+var r = ["Praful", "Vishnu", "Roop"];
 function index(name)
-{ for(i=0;i<3;i++)
-  {
-    if(r[i]==name)
-       {  console.log("the index value of "+ name +" is "+i);
-      return(i);  
-    }
-    else if(r[i]!=name){
+{ 
+  for (i = 0; i < 3; i++) {
+    if (r[i] == name) {
+      console.log("the index value of " + name + " is " + i);
+      return(i);
+    } else if (r[i] != name) {
       return false;
     }
   }
 }
-
-if(index("Praful") === false)
-{
-console.log('no');
-
-}
-
-else{
+if (index("Praful") === false) {
+  console.log('no');
+} else {
   console.log("yes");
-
 }
