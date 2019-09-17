@@ -1,0 +1,24 @@
+Implicit Conversion Basics-
+
+console.log("5"+"3") // Output 53
+Here concatination takes places as + operator is being overshadowed by the concatenation.Its the only place where 
+operator is not given more preference.
+
+console.log("5"-"3") // Output 2
+At this place the minus operator is preferred over the string opearation even though both are string but the minus
+operator treat them as a no.
+
+console.log('AS'-3) // Output NaN
+Its a datatype for occurance of error of nos i.e. not a no.
+
+console.log("5"-3) // Output 2
+will consider 5 as a no(as minus operator) and 3 is a no ,Hence substraction
+
+console.log('shashabk'-'gahlot') // Output NaN
+
+var r=Number("213");
+r is now a no as we have used number operator.It will only take the input as a string that is of format no or boolean,for
+all other cases it will show an error.
+
+var r=Number("deep");
+An error of NaN;
