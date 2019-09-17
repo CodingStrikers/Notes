@@ -1,0 +1,12 @@
+LOGICAL OPERATORS
+1) AND OPERATOR
+  Will evaluate to right side if left side is true and evaluate to false if left side is false in case of boolean.Same is in the
+  case of numbers.
+  Values that are considered true are any no,any string,any array(including empty one),any object(including empty one)
+  Eg of this are-
+  's' && 6 // Output is 6 
+  [2,3] && 6 // Output is 6
+  []&&6 //Output is 
+  's' && 6 // Output is 6  
+  
+  Values that are considered false are an empty string,Null,NaN,0
