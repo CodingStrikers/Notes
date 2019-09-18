@@ -1,4 +1,4 @@
-LOGICAL OPERATORS
+LOGICAL OPERATORS-
 1) AND OPERATOR
   Will evaluate to right side if left side is true and evaluate to false if left side is false in case of boolean.Same is in the
   case of numbers.
@@ -20,11 +20,39 @@ LOGICAL OPERATORS
   0 && 3 //Output is 0
   
   T and F-- F
-    F and F-- F
-      T and T-- T
-        F and T-- F
+  F and F-- F
+  T and T-- T 
+  F and T-- F
   
 2) OR OPERATOR
    It finds out the first truth value
    Eg of this are-
-   
+   ''(F) || 3(T) //Output is 3
+   [](T) || 3(T) //Output is 3
+      
+BITWISE AND-
+  First of all learn how to do binary to decimal conversion and vice versa-
+  101(BINARY)->DECIMAL(1*2^2+0*2^1+1*2^0)=5;
+  Eg 3 & 4  0011 & 0100 -> 0000=0
+  Eg 4 & 6 0100 & 0110 -> 0100=4
+  
+  TRUTH TABLE
+  0 &  1 -> 0
+  1 &  1 -> 1
+  1 &  0 -> 0
+  0 &  0 -> 0
+
+BITWISE OR-
+  TRUTH TABLE
+  0 |  1 -> 1
+  1 |  1 -> 1
+  1 |  0 -> 1
+  0 |  0 -> 0
+
+BITWISE XOR-
+Will give zero when both are 0 or both are 1
+  TRUTH TABLE
+  0 ^ 0 -> 0
+  0 ^ 1 -> 1 
+  1 ^ 0 -> 1
+  1 ^ 1 -> 0
