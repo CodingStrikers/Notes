@@ -1,0 +1,34 @@
+a)parseInt
+  parseInt("23");
+  23
+  parseInt("Re");1
+Number("34")
+34
+  NaN
+  parseInt(true);
+  NaN
+
+b)Number
+  Number(true);
+  1
+  Number("34")
+  34
+  
+c).toString- 
+  123.toString();
+  VM413:1 Uncaught SyntaxError: Invalid or unexpected token
+  var a=23;a.toString();
+  "23"
+  23.toString();
+  VM455:1 Uncaught SyntaxError: Invalid or unexpected token
+
+d)Boolean-
+  Boolean(3);
+  true
+  Boolean(0);
+  false
+  Boolean('');
+  false
+  
+e)typeOf(operand)-
+tells the datatype of operand entered.
