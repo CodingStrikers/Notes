@@ -1,0 +1,7 @@
+	double x,y,z;
+    x=Math.sqrt(2000*2000-(4*1997000));
+    y=-2000+x;
+    z=-2000-x;
+    System.out.println("The value of roots are");
+    System.out.println("1st root"+(y/2));
+    System.out.println("2nd root"+(z/2));
