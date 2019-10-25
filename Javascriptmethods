@@ -1,0 +1,35 @@
+.slice method-
+It has 2 arguments first one defines the place from where to start,the second arguments defines the place before which we want
+to extract the characters.
+for eg
+var str="Hello";
+str.slice(0,1); Output H
+In case of negative no it will it will remove the value till the no specified in that argument and display the rest.
+str.slice(0,-2): Output Hel
+
+If only single parameter is passed then it will display the entire string starting from that index
+Eg str.slice(2); Output llo
+
+In case of negative no it will display the characters begining from the no that is mentioned to the right.
+Eg str.slice(-3); Output llo
+
+In case of 1 positive and negative
+For eg 
+
+In .slice method the first no indicates the starting position,second argument indicates the ending index.In case of negative we
+need to start from the back.
+
+var r="hello";
+console.log(r.slice(0,1));
+console.log(r.slice(1));
+console.log(r.slice(0,-1));
+console.log(r.slice(2,-1));
+console.log(r.slice(-3));
+console.log(r.slice(1,-1));
+
+Output
+'ello'
+'hell'
+'ll'
+'llo'
+'ell'
