@@ -1,0 +1,85 @@
+Before understanding Observables first understand -
+
+Subscriber - Client Side
+Publisher - Producer/Coder
+
+Observables main usage is to handle asynchronous code
+Similar to Promise and Async/Await and yet different.
+
+Pull vs Push in coding -
+
+PULL- 
+In this the subscriber/customer knows when he will receive the data 
+Producer dont have the idea for the same
+
+PUSH-
+In this the producer knows when the data will be delieverd the data while the consumer doesnt know when he will receive it
+Promises can only push once while Observables can push more than once.
+
+Examples of Observables-
+
+const simpleObservable = new Observable((observer)=>{
+observer.next("bla bla");
+observer.complete();
+})
+The value is passed through next method not through the observer keyword in line 21 
+
+simpleObservable.subscribe();
+simpleObservable.unsubscribe();
+
+3 FUNCTIONS ARE THERE IN OBSERVABLES-
+
+next - can be used to send any value,array,object to its subscriber.
+err -  sends the err
+complete - doesnt sends any data.
+
+DIFFERNCE BETWEEN OBSERVABLES AND PROMISES-
+
+Promises can manage a single response for a certain request while multiple response can be there for a single request using
+Observables.
+
+Example to differntiate the two-
+
+const pro=new Promise((data)=>{
+data(1);
+data(2);
+data(3);
+}).then((element)=>{
+console.log('Promise'+element)
+})
+element here is the output coming from data(1) etc.
+
+OUTPUT Promise 1
+
+const Observable= new Observable((data)=>{
+data.next(1);
+data.next(2);
+data.next(3);
+}).subscribe((element)=>{console.log("Observable" + element );
+})
+
+OUTPUT 
+Observable 1
+Observable 2
+Observable 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
