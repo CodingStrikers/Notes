@@ -1,0 +1,8 @@
+When u get error like 
+
+Access to XMLHttpRequest at X from origin Y has been blocked by CORS policy: 
+Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+
+Use let cors = require('cors');
+app.use(cors());
+and npm i cors
