@@ -1,0 +1,59 @@
+EC2
+Elastic Compute Cloud is a kind of server that AWS provides.
+
+EC2 have fireballs in terms of Security groups
+All inbound traffic is blocked by default 
+All outbound traffic is authorised by default.
+
+We run EC2 instance on SSH(Secure Shell).
+SSH is runned using Terminal
+
+There are 2 types of IP public and private
+
+Public IPs are unique while 2 companies can have same Private IP.
+
+If u change the Instance state to Stop and restart it again then your public IP will get changed but your private IP will 
+remain the same.
+
+In case of Elastic IP your Public IP will not get lost if you stop and restart your EC2 instance.
+
+Command to write to launch an EC2 instance
+
+sudo su
+yum update -y
+yum install -y httpd.x86_64
+systemctl start httpd.service
+systemctl enable httpd.service
+curl localhost:80
+
+EC2 can be considered as a server
+There can be multiple EC2 instances.
+
+Load Balancer are generally used along with an EC2 instance.
+It can be considered as a Traffic direction 
+
+There are three things from one end to another
+URL(User) -> Load Balancer -> EC2 instance(server)
+Load Balancer is a single point of access to the application.
+
+There are mainly 3 types of load balancer
+1) Classic Load Balancer
+2) Application Load Balancer
+3) Network Load Balancer
+4) V2 generation load Balancer
+
+Response 200 signifies (success)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
