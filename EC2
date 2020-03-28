@@ -44,9 +44,10 @@ There are mainly 3 types of load balancer
 
 Response 200 signifies (success)
 
-
-
-
+Application Load Balancer(7 layer system)
+Manages HTTP traffice 
+It can handle mutliple application on a single machine
+Application cant see the the IP of the client directly
 
 
 
