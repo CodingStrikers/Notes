@@ -49,6 +49,26 @@ Manages HTTP traffice
 It can handle mutliple application on a single machine
 Application cant see the the IP of the client directly
 
+Elastic Block Storage -
+It is used to store the EC2 instance data 
+Easy dettachment and attachment
+It is locked to a particular zone
+u need to take snapshot to move a EBS volume
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
