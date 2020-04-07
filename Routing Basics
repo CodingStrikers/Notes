@@ -16,6 +16,9 @@ private r:Router
 Either u use routerLink or router.navigate everytime we need to mention the path and component in Routing file otherwise
 it will wont work.
 
+RouterLink will show the path when u hover over the component icons.
+We use router.navigate mainly for redirecting when a condition fails or succeeds.
+
 PARAMETERISED ROUITNG
 Non-parameterised routes take precedence over parameterised routes.
 
