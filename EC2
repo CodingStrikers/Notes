@@ -54,7 +54,7 @@ It is used to store the EC2 instance data
 Easy dettachment and attachment
 It is locked to a particular zone
 u need to take snapshot to move a EBS volume
-
+EBS are used to store EC2 Instances.
 
 
 
