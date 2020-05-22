@@ -156,3 +156,39 @@ console.log(my_hat.Brand());
 
 console.log((function (x, y) { return x + y })(3, 4));  //Output is 7
 
+function a(){
+  return this;}
+console.log(a());    // [object Window]
+
+
+var ab={
+  g:function aa(){
+    if(this==ab)
+    {
+      return true;
+    }}}
+ console.log(ab.g());  // true
+ 
+ function blabbermouth() { };
+console.log(blabbermouth.name);
+.name is the property of the function which displays its name.
+
+U cannot return a variable before it is defined if u do so then it will give a reference error
+blah = function () {
+  return lala;
+  lala = "hi";
+};
+console.log(blah());
+
+  result = 0;
+  arguments.forEach(function (num) {
+    result += num;
+  });
+  return result;
+}
+sum(1, 2, 3);
+This code raises an error because arguments is an array-like object, but it's not actually an array, so we can't use 
+the forEach() method. According to Douglas Crockford, having arguments as an array-like object and not an actual 
+array is a design flaw in the language.
+
+
