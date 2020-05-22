@@ -52,21 +52,15 @@ console.log(firstBook);
 
 var a=[{FirstName:"Vishnu",LastName:"Mehta"}];
 It is an array of Object.
-
 console.log(a.FirstName);  //undefined
 console.log(a[0].FirstName); // Vishnu
 
-
-
-
 var a=["Mango","Apple","Grapes"];
 var k=a.forEach(Name=>{
-  return ("I love to eat "+ Name);
-})
+  return ("I love to eat "+ Name);})
 
  var g=a.map(name=>{
-  return ("this is my "+name)
-})
+  return ("this is my "+name)})
 
 console.log(g);  //
 [
@@ -76,7 +70,8 @@ console.log(g);  //
 ]
 
 console.log(k);  // Output of this will be undefined as forEach doesnt return anything while that of Map returns an array.
-console.log(3/"bob");NaN stands for "not a number" and is returned when a mathematical operation cannot yield a numeric result.
+console.log(3/"bob");NaN stands for "not a number" and is returned when a mathematical operation cannot 
+yield a numeric result.
 
 typeof(NaN) Number
 
@@ -87,3 +82,77 @@ Eg 3 * "bob";
 
 In JavaScript, undefined, NaN, null, 0, "", and the keyword false are all false in a boolean context. All other values 
 are truthy.
+
+var lambchop = function () {
+  "This is the song that never ends";
+}
+console.log(lambchop());
+undefined
+This is a bit of a trick question. The lambchop() function does not have a return statement, so nothing is 
+returned. When a function do not specify any return value, undefined is returned by default.
+
+Function by default returns undefined if the function is not returning anything.
+function add(x, y) {
+  return(x + y);
+}
+console.log(add(1, 2, 3, 4, 10, 20));
+3
+The add() function takes two arguments, but was supplied with 6 arguments when it was invoked. When functions are 
+called with extra arguments, an error is not thrown and JavaScript simply ignores the extra arguments.
+
+function lamp() {
+  var my_special_variable = "I am special";
+}
+lamp();
+console.log(my_special_variable);
+ReferenceError: my_special_variable is not defined
+This example throws an exception because my_special_variable is only accessible within the lamp() function. 
+In other words, my_special_variable can be used anywhere inside the lamp() function, but cannot be used outside
+the lamp() function.
+
+
+function book() {
+  good_book = "Slaughterhouse Five";
+}
+book();
+console.log(good_book);
+"Slaughterhouse Five"
+The var keyword is not used when the good_book variable is defined, so the good_book variable has global scope 
+(it can be used anywhere in the program). Global variables are evil so make sure to always use the var keyword 
+when defining variables.
+
+var yao = {
+  self: function () { return this }
+}
+console.log(yao === yao.self());
+true
+The "this" keyword is available throughout the object and refers to the object itself. this is similar to the concept of 
+self in object oriented programming languages. In this contrived example, the self() method returns this, which is the
+same as the yao object.
+
+ar game = { title: "tic tac toe" };
+var same_game = { title: "tic tac toe" };
+console.log(game === same_game );
+false
+The game and same_game objects have the same contents, but they are different objects. JavaScript only considers 
+two objects equal if the equality operator is referring to exactly the same object, not two different objects that 
+have the same contents.
+
+function Hat() {
+  var brand = "shhh can't tell";
+  this.Brand = function () { return brand; };
+}
+var my_hat = new Hat();
+console.log(my_hat.brand);
+// Output is Undefined
+
+
+function Hats() {
+  var brand = "shhh can't tell";
+  this.Brand = function () { return brand; };
+}
+var my_hat = new Hats();
+console.log(my_hat.Brand());
+
+console.log((function (x, y) { return x + y })(3, 4));  //Output is 7
+
