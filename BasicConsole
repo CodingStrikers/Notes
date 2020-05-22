@@ -1,0 +1,89 @@
+var x=5;
+console.log("value of x is = " +x+" and of y is = "+y);
+var x,y=7;
+console.log(x);
+
+OUTPUT
+value of x is = 5 and of y is = undefined
+5
+
+var x=5;
+console.log("value of x is = " +x+" and of y is = "+y);
+var x=7,y=7;
+console.log(x);
+
+OUTPUT
+value of x is = 7 and of y is = undefined
+5
+
+No are considered as numbers even u mark it in quotes. (string)
+console.log("">"2");  False
+console.log("3">"2"); True
+console.log(3>2);     True
+
+var a=["Vishnu","Kashish","Karan"];
+console.log(typeof(a));  // Object
+
+var b=function sa(){}
+console.log(typeof(b));  // function
+
+var g=new Date();
+console.log(g);
+console.log(typeof(g));  // Object
+
+
+var person={
+  firstname:"Vishnu",
+  Lastname:"Mehta",
+  fullname:function(){
+    return this.firstname}
+}
+console.log(typeof(person.fullname())) //string
+console.log(typeof(person.fullname)) //function
+console.log(person.fullname()); //Vishnu
+
+function Book(name,year){
+  this.name = name;
+  this.year = year; 
+};
+var firstBook=new Book("Vishnu",1997);
+console.log(firstBook);
+
+
+var a=[{FirstName:"Vishnu",LastName:"Mehta"}];
+It is an array of Object.
+
+console.log(a.FirstName);  //undefined
+console.log(a[0].FirstName); // Vishnu
+
+
+
+
+var a=["Mango","Apple","Grapes"];
+var k=a.forEach(Name=>{
+  return ("I love to eat "+ Name);
+})
+
+ var g=a.map(name=>{
+  return ("this is my "+name)
+})
+
+console.log(g);  //
+[
+"this is my Mango",
+"this is my Apple",
+"this is my Grapes"
+]
+
+console.log(k);  // Output of this will be undefined as forEach doesnt return anything while that of Map returns an array.
+console.log(3/"bob");NaN stands for "not a number" and is returned when a mathematical operation cannot yield a numeric result.
+
+typeof(NaN) Number
+
+Javascript itself try to convert a string into number if their is any mathematical operator but if their is String inside the 
+double quotes it will give NaN.
+
+Eg 3 * "bob";
+
+In JavaScript, undefined, NaN, null, 0, "", and the keyword false are all false in a boolean context. All other values 
+are truthy.
