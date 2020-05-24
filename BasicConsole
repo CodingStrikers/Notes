@@ -191,4 +191,21 @@ This code raises an error because arguments is an array-like object, but it's no
 the forEach() method. According to Douglas Crockford, having arguments as an array-like object and not an actual 
 array is a design flaw in the language.
 
+This will clear the doubt why u get [Object object] thing when u alert the object u receive from node side u first need to 
+convert it into a string otherwise u cannot display it.
 
+const a={
+  name:"Vishnu",
+  age:23
+}
+console.log(a);
+console.log(typeof(a));
+
+{name:"Vishnu",age:23}
+object
+
+console.log(JSON.stringify(a));
+console.log(typeof(JSON.stringify(a)));
+
+{"name":"Vishnu","age":23}
+string
