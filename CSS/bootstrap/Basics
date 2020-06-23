@@ -1,0 +1,26 @@
+Ensure to work in a Grid system as it allows you to bulid responsive web pages. container>row>cols
+<hr> Used to have a horizontal rule.
+We can a make a button that can have href
+It can be done using <a href btn btn-primary>Sign</a>
+
+bg-dark, bg-light, text-light, text-dark etc can also be there
+
+To make a better displaying jumborton use
+<div class="container">(this adds margin both to the left and right)
+  <div class="jumborton">
+     <h1 class="display-4">
+       Hello World!!
+     </h1>
+     <p class="lead"> Hope you are doing well. Will see you next time
+     </p>
+     <a class="btn btn-danger btn-lg" href="#">Click Me</a>
+  </div>
+</div>
+
+<h3 class="text-primary display-4"> I have a primary color </div>
+<button>
+  <button class="btn btn-lg btn-danger"> DANGER BUTTON</button>
+        <button class="btn btn-outline-info btn-lg">OUTLINE BUTTON</button>
+        <h1> Big Text<small class="text-muted">make me muted</small></h1>
+        <p class="bg-dark text-white text-center"> Dark backround white text and aligned centre</p>
+        <button class="btn btn-link">This button looks like a Link</button>
