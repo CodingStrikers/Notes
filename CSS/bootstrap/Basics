@@ -24,3 +24,34 @@ To make a better displaying jumborton use
         <h1> Big Text<small class="text-muted">make me muted</small></h1>
         <p class="bg-dark text-white text-center"> Dark backround white text and aligned centre</p>
         <button class="btn btn-link">This button looks like a Link</button>
+
+Colors can be applied to button,text,border by using text-primary,btn btn-primary,border border-primary
+
+Shadow can also be given as shadow-lg,shadow,shadow-sm
+Margin and Padding are also essential for the designing of a web page.
+mt-5 mb-5 mr-5 ml-9 mx-4 my-3 similar is the scenario for padding u can add it pt,pr,pl,pb,px,py
+You can also make the margin responsive by adding things like this 
+m-3 m-md-5 It means margin will be 3 for small devices and it will be 5 or greater for md or bigger than that devices
+
+<small class="text-muted>Password must be at least 8 characters </small> It will display small and Opaque text.
+
+PREPARATION OF FORM USING BOOTSTRAP
+<form>
+<div class="formgroup>
+<label for="imagefile">Upload File </label>
+<input type="file" class="form-control-file" id="imagefile">
+// form-control-file is a special type of form-control which enhances the view.
+</div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
